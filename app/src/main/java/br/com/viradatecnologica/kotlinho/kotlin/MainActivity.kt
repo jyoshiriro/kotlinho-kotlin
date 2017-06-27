@@ -57,7 +57,8 @@ class MainActivity : AppCompatActivity() {
 
 
     private fun configBtnOnClick() {
-        btnSearch?.setOnClickListener(View.OnClickListener {
+
+        btnSearch?.setOnClickListener({
             val user = object : AsyncTask<Int, Void, User>() {
 
                 public override fun doInBackground(vararg params: Int?): User? {
@@ -71,13 +72,12 @@ class MainActivity : AppCompatActivity() {
                         e.printStackTrace()
                         return null
                     }
-
                 }
 
             }?.doInBackground(edUserid?.text.toString().toInt())
 
             if (user == null) {
-                Toast.makeText(this,
+                Toast.makeText(this@MainActivity,
                         "Usuário ${edUserid?.text} não encontrado!",
                         Toast.LENGTH_SHORT).show()
 
@@ -102,7 +102,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun clearTextViews() {
-        textViews.forEach { it?.text = "" }
+        textViews.forEach{ it?.text = "" }
     }
 
     private fun configPolicy() {
