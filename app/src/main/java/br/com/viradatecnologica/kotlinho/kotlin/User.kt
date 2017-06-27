@@ -1,8 +1,6 @@
 package br.com.viradatecnologica.kotlinho.kotlin
 
-
 data class User (
-
     var id:Integer? = null,
     var name:String? = null,
     var username:String? = null,
@@ -12,10 +10,8 @@ data class User (
 )
 
 data class Address (
-
     var street:String? = null,
     var city:String? = null,
-    var zipcode:String? = null,
 
     var geo:Geo? = null
 )

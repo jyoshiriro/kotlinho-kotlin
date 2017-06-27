@@ -3,7 +3,6 @@ package br.com.viradatecnologica.kotlinho.kotlin
 import feign.Param;
 import feign.RequestLine;
 
-
 interface UserRequets {
 
     @RequestLine("GET /users/{id}")

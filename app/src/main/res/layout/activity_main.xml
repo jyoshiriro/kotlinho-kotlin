@@ -47,6 +47,7 @@
         android:id="@+id/tvStreet"
         android:layout_below="@id/tvEmail"
         />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -57,15 +58,8 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/tvZipcode"
-        android:layout_below="@id/tvCity"
-        />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:id="@+id/tvLat"
-        android:layout_below="@id/tvZipcode"
+        android:layout_below="@id/tvCity"
         />
 
     <TextView
@@ -74,6 +68,5 @@
         android:id="@+id/tvLng"
         android:layout_below="@id/tvLat"
         />
-
 
 </RelativeLayout>

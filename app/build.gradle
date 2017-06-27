@@ -35,4 +35,5 @@ dependencies {
 
     compile group: 'io.github.openfeign', name: 'feign-core', version: '9.5.0'
     compile 'io.github.openfeign:feign-gson:9.5.0'
+
 }
